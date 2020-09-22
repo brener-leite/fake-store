@@ -1,0 +1,14 @@
+$spaces: 5, 10, 20, 30, 50;
+
+.space {
+  @each $space in $spaces {
+    &--horizontal-#{$space} {
+      padding-left: #{$space + 'px'};
+      padding-right: #{$space + 'px'};
+    }
+    &--vertical-#{$space} {
+      padding-top: #{$space + 'px'};
+      padding-bottom: #{$space + 'px'};
+    }
+  }
+}

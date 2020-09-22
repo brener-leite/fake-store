@@ -1,0 +1,32 @@
+.text {
+  font-style: normal;
+  color: $c-black;
+  &--regular {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  &--large {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+  }
+  &--extra-large {
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 77px;
+    text-transform: uppercase;
+  }
+  &--pink {
+    color: $c-pink;
+  }
+  &--green {
+    color: $c-green;
+  }
+  &--white {
+    color: $c-white;
+  }
+  &--dark-gray {
+    color: $c-dark-gray;
+  }
+}
