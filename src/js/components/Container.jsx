@@ -1,8 +1,8 @@
 import React from 'react'
 
 
-const Container = ({children, title}) => {
-  document.title = title;
+const Container = ({children}) => {
+
   return (
     <>
       <main className="container">
