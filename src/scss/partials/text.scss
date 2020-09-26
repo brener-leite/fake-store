@@ -1,3 +1,5 @@
+$sizes: 12, 14, 16, 18;
+
 .text {
   font-style: normal;
   color: $c-black;
@@ -15,6 +17,13 @@
     font-weight: 500;
     font-size: 64px;
     line-height: 77px;
+  }
+  @each $size in $sizes {
+    &--size-#{$size} {
+      font-size: #{$size + 'px'};
+    }
+  }
+  &--uppercase {
     text-transform: uppercase;
   }
   &--pink {
