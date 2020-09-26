@@ -5,7 +5,7 @@ const Container = ({children}) => {
 
   return (
     <>
-      <main className="container">
+      <main>
         {children}
       </main>
     </>
