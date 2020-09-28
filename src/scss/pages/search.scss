@@ -1,0 +1,9 @@
+.search {
+  .container {
+    text-align: center;
+  }
+  &__result {
+    display: flex;
+    justify-content: center;
+  }
+}

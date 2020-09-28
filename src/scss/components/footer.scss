@@ -4,6 +4,9 @@
   width: 100%;
   display: flex;
   align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
   .container {
     display: flex;
     justify-content: space-between;

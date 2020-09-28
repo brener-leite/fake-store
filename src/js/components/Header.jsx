@@ -1,3 +1,4 @@
+import { bind } from 'file-loader';
 import React from 'react';
 
 import Swal from 'sweetalert2';
@@ -6,6 +7,12 @@ import logo from '../../arquivos/logo-jussi.png';
 import {ReactComponent as IconCart} from '../../svg/icon-cart.svg';
 
 const Header = () => {
+  const bind = (event, value) => {
+    event.preventDefault();
+    const form = event.target;
+    window.location = `/search?id=${value}`
+  }
+
   return (
     <>
       <header className="header">
@@ -19,8 +26,8 @@ const Header = () => {
           </div>
           <div className="header__area">
             <div>
-              <form action="">
-                <input type="text" name="search" id="search" className="input__search text--regular text--pink" placeholder="Buscar"/>
+              <form id="formSearch" onSubmit={(event) => bind(event, event.target.elements.namedItem('searchInput').value)}>
+                <input type="text" name="search" id="searchInput" className="input__search text--regular text--pink" placeholder="Buscar"/>
               </form>
             </div>
             <div className="space--horizontal-30">

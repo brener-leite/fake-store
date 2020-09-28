@@ -1,9 +1,6 @@
 import React from 'react';
 
 import CompanyLogo from '../../arquivos/logo-wppcompany.png';
-import FacebookIcon from '../../arquivos/icon-facebook.png';
-import InstagramIcon from '../../arquivos/icon-instagram.png';
-import LinkedinIcon from '../../arquivos/icon-linkedin.png';
 
 const Footer = () => {
   return (

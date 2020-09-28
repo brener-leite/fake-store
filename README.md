@@ -1,11 +1,13 @@
 ## Features
+### Implementadas
+- Search;
+- Loading
+
 ### A implementar
 - Minicart;
-- Search;
+- Autocomplete;
 - Versão Mobile;
-- Página de produto;
-
-### Implementadas
+- Página de produto
 
 ## scripts
 

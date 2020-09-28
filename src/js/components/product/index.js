@@ -1,5 +1,5 @@
 /**
-* @param {String} product it can be product's name or id
+* @param {String} product it can be product name or id
 */
 export async function getProduct(product) {
   const config = {
@@ -17,7 +17,8 @@ export async function getProduct(product) {
     return data;
   }
   catch(error) {
-    console.error(`[product] ${error}`)
+    console.error(`[get product] ${error.message}`)
+    return {};
   }
 }
 

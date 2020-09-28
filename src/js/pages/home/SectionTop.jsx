@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import Swal from 'sweetalert2';
 
 import Card from '../../components/product/Card.jsx';
 
 const SectionTop = () => {
+  const [loading, setLoading] = useState(0); // loading: 0 - request is being processed, 1 - product not found, 2 - product found
+
   return (
     <section className="home__area home__area--top">
       <div className="container home__container">
@@ -26,13 +28,13 @@ const SectionTop = () => {
         </div>
         <div className="home__container home__container--right">
           <div className="home__card home__card--first">
-            <Card id={Math.floor(Math.random() * 200 + 1)}/>
+            <Card id={Math.floor(Math.random() * 200 + 1)} loading={loading} setLoading={setLoading}/>
           </div>
           <div className="home__card home__card--second">
-            <Card id={Math.floor(Math.random() * 100 + 1)}/>
+            <Card id={Math.floor(Math.random() * 100 + 1)} loading={loading} setLoading={setLoading}/>
           </div>
           <div className="home__card home__card--third">
-            <Card id={Math.floor(Math.random() * 100 + 1)}/>
+            <Card id={Math.floor(Math.random() * 100 + 1)} loading={loading} setLoading={setLoading}/>
           </div>
         </div>
       </div>

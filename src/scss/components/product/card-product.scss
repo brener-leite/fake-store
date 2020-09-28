@@ -1,8 +1,11 @@
 .card-product {
   border: 1px solid $c-gray;
   border-radius: 4px;
-  min-width: 240px;
+  width: 240px;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   &__image {
     width: 100%;
@@ -33,5 +36,6 @@
     height: 100%;
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
 }

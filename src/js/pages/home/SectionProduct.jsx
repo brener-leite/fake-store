@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import CardProduct from '../../components/product/CardProduct.jsx';
 
 const SectionProduct = () => {
+  const [loading, setLoading] = useState(0); // loading: 0 - request is being processed, 1 - product not found, 2 - product found
   const mountCarousel = (length) => {
     let carousel = [];
     let item = {};
@@ -27,7 +28,7 @@ const SectionProduct = () => {
             {mountCarousel(4).map((item)=> {
               return (
                 <li key={item.id}>
-                  <CardProduct id={item.id}/>
+                  <CardProduct id={item.id} loading={loading} setLoading={setLoading}/>
                 </li>
               );
             })}

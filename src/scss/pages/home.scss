@@ -58,7 +58,13 @@
       }
       .newsletter {
         &__text {
+          position: relative;
           margin-bottom: 24px;
+          span {
+            position: absolute;
+            top: 0;
+            left: -75px;
+          }
         }
         &__form {
           max-width: 502px;

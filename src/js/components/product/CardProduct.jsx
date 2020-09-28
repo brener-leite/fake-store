@@ -3,7 +3,8 @@ import React, { useEffect, useState } from 'react';
 import {getProduct} from './index.js'
 import {convertUnity} from '../../utils/index.js';
 
-const CardProduct = ({id}) => {
+const CardProduct = ({id, loading, setLoading}) => {
+  // loading: 0 - request is being processed, 1 - product not found, 2 - product found
   const [data, setData] = useState({});
 
   const METERS_TO_FOOTS = 3.281;
@@ -11,7 +12,13 @@ const CardProduct = ({id}) => {
 
   async function connect() {
     const response = await getProduct(id);
-    setData(response);
+    if(response.name) {
+      setData(response);
+      setLoading(2);
+    }
+    else {
+      setLoading(1);
+    }
   }
 
   useEffect(() => {
@@ -20,7 +27,8 @@ const CardProduct = ({id}) => {
 
   return (
     <div className="card-product space--horizontal-15 space--vertical-15">
-      <div className="card-product__container">
+      <div className={`loading ${(loading !== 0 && 'hide')}`}></div>
+      <div className={`card-product__container ${loading === 0 && 'hide'}`}>
         <div className="card-product__image">
           <img src={data?.sprites?.front_default} alt={`Imagem do pokémon ${data?.name}`}/>
         </div>
