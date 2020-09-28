@@ -1,0 +1,14 @@
+.footer {
+  background-color: $c-black;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__icons {
+    display: flex;
+  }
+}

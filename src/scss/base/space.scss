@@ -1,4 +1,4 @@
-$spaces: 5, 10, 15, 20, 30, 50;
+$spaces: 5, 10, 15, 17, 20, 24, 30, 48, 50, 56, 64, 136;
 
 .space {
   @each $space in $spaces {

@@ -1,24 +1,32 @@
 .button {
+  display: block;
   cursor: pointer;
   padding: 12px 0;
   border-radius: 6px;
   width: 100%;
   text-align: center;
-  &:hover {
-    opacity: 0.6;
-  }
-  > span {
-    color: $c-black;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 500;
-  }
+  transition: .2s all;
   &--primary {
     background-color: transparent;
     border: 1px solid $c-black;
   }
   &--secondary {
     background-color: $c-green;
-    border-width: 0;
+    border: 1px solid $c-green;
+    &:hover {
+      background-color: $c-white;
+    }
+  }
+  &--tertiary {
+    width: 100%;
+    border: 1px solid $c-pink;
+    border-radius: 24px;
+    padding: 12px 0;
+    &:hover {
+      background-color: $c-pink;
+      &> span {
+        color: $c-white;
+      }
+    }
   }
 }

@@ -1,0 +1,16 @@
+.newsletter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 18px;
+  border-bottom: 1px solid $c-green;
+  max-width: 502px;
+  input {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    &::placeholder {
+      color: $c-white;
+    }
+  }
+}

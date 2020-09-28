@@ -20,3 +20,17 @@ export async function getProduct(product) {
     console.error(`[product] ${error}`)
   }
 }
+
+/**
+ * @param {}
+ */
+ export async function addToCart() {
+
+ }
+
+/**
+* @param {}
+*/
+export async function setCart() {
+  
+}

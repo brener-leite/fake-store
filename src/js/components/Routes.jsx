@@ -1,9 +1,9 @@
 import React from 'react';
 import {BrowserRouter, Route} from 'react-router-dom';
 
-import About from '../pages/About';
-import Search from '../pages/Search';
-import Home from '../pages/Home';
+import About from '../pages/About.jsx';
+import Search from '../pages/Search.jsx';
+import Home from '../pages/home/Home.jsx';
 
 const Routes = () => (
   <BrowserRouter>

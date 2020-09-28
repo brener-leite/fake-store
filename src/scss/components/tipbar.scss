@@ -1,0 +1,17 @@
+.tipbar {
+  height: 80px;
+  background-color: $c-gray;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+  }
+  &__logo {
+    width: fit-content;
+    img {
+      width: 100%;
+    }
+  }
+}
