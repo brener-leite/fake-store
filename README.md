@@ -11,7 +11,7 @@
 
 ## scripts
 
-Run this follow command to run this project on your local server:
+Run the following command to run this project on your local server:
 
 ### `npm start`
 
