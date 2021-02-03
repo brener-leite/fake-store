@@ -1,9 +1,9 @@
 ## Features
-### Implementadas
+### Done
 - Search;
 - Loading
 
-### A implementar
+### In progress
 - Minicart;
 - Autocomplete;
 - Versão Mobile;
@@ -11,7 +11,7 @@
 
 ## scripts
 
-Para rodar o projeto em sua máquina local, basta utilizar o seguinte comando:
+Run this follow command to run this project on your local server:
 
 ### `npm start`
 
